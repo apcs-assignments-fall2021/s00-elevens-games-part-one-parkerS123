@@ -71,6 +71,10 @@ public class Deck {
 	// Shuffling should also reset the size variable to its original value
 	public void shuffle() {
 		size = cardsList.size();
+		for (int i = 0; i < size; i++){
+			int x = (int) (Math.random() * size);
+			cardsList.set(x, cardsList.get(i));
+		}
 
 
 	}
